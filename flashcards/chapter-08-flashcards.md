@@ -1,0 +1,16 @@
+## Chapter 8: KYC/CDD, Know Your Transaction (KYT), and the Regulatory Landscape — Flashcards
+
+| # | Front (Question) | Back (Answer) |
+|---|-----------------|---------------|
+| 1 | What does CDD stand for and what is its baseline purpose? | Customer Due Diligence — baseline identity verification and risk assessment performed on all customers at onboarding. Exam tip: CDD is the mandatory minimum; EDD is the enhanced add-on for high-risk customers. |
+| 2 | What triggers Enhanced Due Diligence (EDD)? | PEP status, high-risk jurisdiction, unusual transaction patterns, high transaction volume, or cash-intensive business. Exam tip: EDD adds source-of-funds verification plus ongoing enhanced monitoring. |
+| 3 | KYC vs KYT — what's the key distinction? | KYC verifies customer identity at onboarding (point-in-time); KYT monitors transaction behavior continuously in real time. Exam tip: KYT catches structuring, layering, and mixer exposure that KYC alone cannot. |
+| 4 | Which U.S. agency maintains the SDN (Specially Designated Nationals) list? | OFAC (Office of Foreign Assets Control). Exam tip: OFAC = sanctions screening; FinCEN = AML reporting (SARs/CTRs). |
+| 5 | What is FinCEN's core function? | U.S. Treasury bureau enforcing the Bank Secrecy Act (BSA); requires MSBs/VASPs to register and file SARs and CTRs. Exam tip: FinCEN = domestic AML enforcement and reporting body. |
+| 6 | What is FATF and what power does it have? | Financial Action Task Force — an intergovernmental body that sets global AML/CFT standards. It has NO direct enforcement power; member countries implement its recommendations into national law. Exam tip: FATF sets standards (e.g., Travel Rule), it does not prosecute. |
+| 7 | What is the FATF 'Travel Rule' recommendation number? | Recommendation 16 — requires VASPs to collect and share originator/beneficiary information on virtual asset transfers. Exam tip: FATF sets the standard; national regulators like FinCEN implement it. |
+| 8 | What is the standard U.S. Currency Transaction Report (CTR) threshold? | $10,000 in cash transactions in a single business day. Exam tip: CTR is mandatory regardless of suspicion; SAR is based on suspicion, not a fixed threshold trigger alone. |
+| 9 | What is the typical BSA/Travel Rule funds transfer recordkeeping threshold in the U.S.? | $3,000. Exam tip: below this threshold, full originator/beneficiary information sharing is not mandated under the U.S. Travel Rule. |
+| 10 | What does SAR stand for and when is it filed? | Suspicious Activity Report — filed when a transaction (commonly at or above $5,000) is suspected to involve illicit funds or evade reporting requirements. Exam tip: SAR filings are confidential; tipping off the customer is prohibited. |
+| 11 | Name three inputs to a transaction monitoring risk score. | Transaction size/velocity, counterparty risk (mixer or sanctioned-address exposure), and geographic/jurisdictional risk. Exam tip: exam scenarios test which inputs are relevant vs. irrelevant noise. |
+| 12 | What is a 'PEP' in KYC/EDD context? | Politically Exposed Person — a current/former senior government official, their family, or close associates. Exam tip: PEP status is a classic automatic EDD trigger due to bribery/corruption risk. |

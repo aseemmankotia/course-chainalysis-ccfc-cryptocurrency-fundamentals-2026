@@ -1,0 +1,16 @@
+## Chapter 1: Blockchain 101: Distributed Ledgers, Blocks, and Consensus — Flashcards
+
+| # | Front (Question) | Back (Answer) |
+|---|-----------------|---------------|
+| 1 | Bitcoin difficulty adjustment interval? | Every 2016 blocks (~2 weeks). Exam tip: purpose is to keep average block time near 10 minutes regardless of network hashrate changes. |
+| 2 | Minimum ETH to run a solo Ethereum validator? | 32 ETH. Exam tip: this is the protocol-level solo validator deposit — staking pools allow smaller contributions but the exam tests the base protocol figure. |
+| 3 | Bitcoin target average block time? | ~10 minutes. Exam tip: contrast with Ethereum's ~12-second slot time under PoS. |
+| 4 | What hashpower/stake threshold defines a '51% attack'? | Controlling >50% of network hashrate (PoW) or staked value (PoS). Exam tip: allows double-spending via chain reorganization, not theft of others' private keys. |
+| 5 | PoW vs PoS: how is the next block producer chosen? | PoW: miner who solves the computational puzzle first (energy-intensive). PoS: validator selected based on staked collateral (energy-efficient). Exam tip: Ethereum moved from PoW to PoS at 'the Merge' in September 2022. |
+| 6 | Hard fork vs soft fork — key difference? | Hard fork: not backward-compatible, all nodes must upgrade or the chain splits (e.g., Bitcoin Cash from Bitcoin). Soft fork: backward-compatible rule tightening, old nodes still validate new blocks (e.g., SegWit). |
+| 7 | Block header — list the core fields. | Previous block hash, Merkle root, timestamp, nonce, difficulty target, version. Exam tip: the exam distinguishes 'previous hash' (links to prior block) from 'Merkle root' (summarizes this block's transactions). |
+| 8 | Why is a distributed ledger 'tamper-evident'? | Each block's header includes the hash of the prior block. Changing any historical data changes that block's hash, breaking the chain and requiring the majority of the network to accept the altered version. Exam tip: this is why tampering requires re-mining/re-validating every subsequent block plus a majority consensus takeover. |
+| 9 | Pseudonymous vs anonymous — blockchain distinction? | Pseudonymous: addresses aren't directly tied to real identity, but full transaction history is public and traceable via chain analysis/exchange KYC. Anonymous would mean untraceable — which public blockchains are NOT. Exam tip: this is a heavily tested conceptual trap. |
+| 10 | Nodes vs Miners vs Validators — roles? | Node: stores/validates the ledger and relays transactions/blocks. Miner (PoW): competes to solve the puzzle and produce new blocks. Validator (PoS): staked participant chosen to propose/attest blocks. Exam tip: all nodes validate, but not all nodes mine or validate blocks for production. |
+| 11 | Cryptographic hash function key property tested on exam? | Avalanche effect: tiny input change produces a completely different output hash. Exam tip: this is why altering even one byte in a block invalidates its hash and breaks the chain link. |
+| 12 | When did Ethereum switch from PoW to PoS ('the Merge')? | September 2022. Exam tip: post-Merge Ethereum uses PoS exclusively; mining (PoW) on Ethereum's execution layer no longer exists. |
